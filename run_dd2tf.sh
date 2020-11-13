@@ -27,7 +27,7 @@ fi
 echo "Starting export of Datadog files to Terraform configs..."
 
 # run the dd2tf docker container, passing any additional arguments to ./run_dd2tf.sh as arguments to the container and thus dd2tf binary
-docker run --rm -e DATADOG_API_KEY=$DATADOG_API_KEY -e DATADOG_APP_KEY=$DATADOG_APP_KEY -v ${PWD}/exports:/app/exports toozej/dd2tf:latest $@
+docker run --rm -e DATADOG_API_KEY=$DATADOG_API_KEY -e DATADOG_APP_KEY=$DATADOG_APP_KEY -v ${PWD}/exports:/app/exports rstricklin/dd2tf:latest $@
 
 # if exports is empty, exit 3
 if [ ! "$(ls ${PWD}/exports/*.tf)" ]; then

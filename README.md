@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/toozej/dd2tf.svg?branch=master)](https://travis-ci.org/toozej/dd2tf)
-
 A simple utility to convert DataDog dashboards and/or monitors to Terraform format. 
 
 Requires `DATADOG_API_KEY` and `DATADOG_APP_KEY` environment variables.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -r DD2TF_IMAGE_NAME="toozej/dd2tf"
+declare -r DD2TF_IMAGE_NAME="rstricklin/dd2tf"
 declare -r DD2TF_IMAGE_TAG="latest"
 
 echo "Building image '$DD2TF_IMAGE_NAME:$DD2TF_IMAGE_TAG'..."
